@@ -34,12 +34,12 @@ body{
 
 /*------HEADER--------*/
 
-header {
+ /* header {
     background-color: #f2f7f5;
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
+}*/
 
 
 header h1{
@@ -55,10 +55,12 @@ header h1 a {
     color: #00473e;
 }
 
+/*
 header nav ul{
     display: flex;
     margin: 15px;
-}
+}*/
+
 header nav ul li {
     text-decoration: none;
     color: #00473e;
@@ -67,7 +69,13 @@ header nav ul li {
     font-family: 'Alumni Sans Collegiate One', sans-serif;
 }
 
-
+.logo{
+    font-style: normal;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    font-weight: 600;
+    font-size: 40px;
+    color: #00473e !important;
+}
 
 
 /*-------MAINE--------*/
@@ -195,7 +203,7 @@ header nav ul li {
 .fixed{
     position: fixed;
     right:60px ;
-    bottom: 150px;
+    bottom: 50px;
 }
 
 
@@ -449,5 +457,7 @@ border-radius: 20px;
     .grid-item {
         grid-column: span 1;
         grid-row: span 1;
+    }
+    .fixed{
     }
     }
