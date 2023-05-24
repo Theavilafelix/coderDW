@@ -302,22 +302,174 @@ border-radius: 20px;
 
 
 /*-------NOSOTROS---------*/
-.swap{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 0;
+.carousel{
+    max-width: 1200px;
+    margin: 0 auto;
     margin-top: 20px;
-    margin-bottom: 80px;
-    margin-right: 80px;
+    margin-bottom: 50px;
 }
-
 .descripcion h2 {
     background-color: #00473e;
     text-align: center;
     color: #ffffff;
     border-radius: 5px;
+    margin-bottom: 50px;
 }
+.descripcion h3{
+    text-align: center;
+    margin-bottom: 50px;
+}
+.descripcion p{
+    background-color: #87c7ae;
+    border-radius: 5px;
+    box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+    -moz-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+    border-radius: 20px;
+    font-family:'Alumni Sans Collegiate One', sans-serif ;
+    height: 220px;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+
+
+/*-----SERVICIOS--------*/
+
+.servicios{
+    display: flex;
+    flex-direction: column;
+}
+
+.servicios img{
+    width:  40%;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+    margin-top: 50px;
+    margin-left: 50px;
+    margin-bottom: 50px;
+}
+.servicios p{
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+    -webkit-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+    -moz-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+    border-radius: 20px;
+    display: inline-block;
+    font-family:'Alumni Sans Collegiate One', sans-serif ;
+    display: inline-block;
+    width: 40%;
+    height: 200px;
+    margin: 1rem auto;
+    text-align: center;
+    font-size: 20px;
+    margin-right: 5rem;
+    margin-left: 5rem;
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+    padding-top: 50px;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.servicios a{
+    background-color: #faae2b;
+    font-family:'Alumni Sans Collegiate One', sans-serif ;
+    padding: 15px;
+    font-variant: small-caps;
+    border-radius: 5px;
+    box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+    transition: 1s;
+    position:relative;
+    top: 150px;
+    right: 250px;
+
+}
+
+
+/*-------CONTACTO--------*/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Alumni Sans Collegiate One', sans-serif;
+    }
+
+.container-form{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 80px;
+    margin-top: 90px;
+}
+
+.container-form h2{
+    margin-bottom: 15px;
+    font-size: 35px
+}
+.container-form p{
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+.container-form a{
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    width: 100%;
+    margin-bottom: 15px;
+    color: black;
+    font-weight: 700;
+}
+.container-form a i{
+    color: orange;
+    margin-right: 10px;
+}
+.container-form form .campo, textarea{
+    width: 100%;
+    padding: 15px 10px;
+    font-size: 16px;
+    border: 1px solid #dbdbdb;
+    margin-bottom: 20px;
+    border-radius: 3px;
+    outline: 0px;
+}
+.container-form form textarea{
+    max-width: 530px;
+    min-width: 530px;
+    min-height: 140px;
+    max-height: 150px;
+}
+.container-form .btn-enviar{
+    padding: 15px;
+    font-size: 16px;
+    border: none;
+    outline: 0px;
+    background: #faae2b;
+    color: black;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: all 300ms ease;
+    margin-bottom: 50px;
+
+}
+.container-form .btn-enviar:hover{
+    background: #00473e;
+    color: white;
+}
+
+
 
 
 
@@ -331,6 +483,11 @@ border-radius: 20px;
     color: #f2f7f5;
     background-color: #00473e;
 }
+.servicios a:hover{
+    color: #f2f7f5;
+background-color: #00473e;
+}
+
 
 
 /*------MEDIA QUERYS--------*/
@@ -352,6 +509,14 @@ border-radius: 20px;
         margin: 0px 40px 100px 150px;
         font-size: 20px;
         color:black;
+    }
+    .descripcion p{
+        font-size: 30px;
+        text-align: center;
+        margin-top: 5px;
+        padding-top: 50px;
+        padding-right: 5px;
+        padding-left: 5px;
     }
 
 }
@@ -391,6 +556,60 @@ border-radius: 20px;
         font-size: 20px;
         color:black;
     }
+    .descripcion p{
+        font-size: 20px;
+        text-align: center;
+        margin-top: 5px;
+        padding-top: 60px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
+
+    
+}
+
+@media screen and (max-width:900px){
+    .servicios img{
+        width:  80%;
+        border-radius: 5px;
+        box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+    }
+    .servicios p{
+        background-color: white;
+        border-radius: 5px;
+        box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+        -webkit-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+        -moz-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+        border-radius: 20px;
+        display: inline-block;
+        font-family:'Alumni Sans Collegiate One', sans-serif ;
+        display: inline-block;
+        width: 80%;
+        height: 200px;
+        margin: 1rem auto;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 50px;
+        margin-left: 100px;
+        margin-bottom: 50px;
+        padding-top: 50px;
+        padding-right: 10px;
+        padding-left: 10px;
+    }
+
+    @media screen and (max-width:900px){
+
+        .container-form form textarea{
+            max-width: 400px;
+            min-width: 400px;
+            min-height: 140px;
+            max-height: 150px;
+        }
+    }
+    
 }
 
 @media screen and (max-width:705px) {
@@ -414,6 +633,16 @@ border-radius: 20px;
     .grid-item {
         grid-column: span 2;
         grid-row: span 1;
+    }
+    
+}
+
+@media screen and (max-width:630px){
+    .container-form form textarea{
+        max-width: 300px;
+        min-width: 300px;
+        min-height: 140px;
+        max-height: 150px;
     }
 }
 
@@ -449,6 +678,14 @@ border-radius: 20px;
         font-size: 20px;
         color:black;
     }
+    .descripcion p{
+        font-size: 14px;
+        text-align: center;
+        margin-top: 5px;
+        padding-top: 50px;
+        padding-right: 5px;
+        padding-left: 5px;
+    }
 
     .grid-galeria {
         grid-template-columns: 1fr;
@@ -459,5 +696,47 @@ border-radius: 20px;
         grid-row: span 1;
     }
     .fixed{
+        display: none;
     }
+    }
+
+    @media screen and (max-width:480px){
+        .servicios img{
+            width:  80%;
+            border-radius: 5px;
+            box-shadow: 0 5px 5px rgba(1, 23, 46, 0.6);
+            margin-top: 40px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+        }
+        .servicios p{
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+            -webkit-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+            -moz-box-shadow: 11px 9px 19px -5px rgba(0,0,0,0.46);
+            border-radius: 20px;
+            display: inline-block;
+            font-family:'Alumni Sans Collegiate One', sans-serif ;
+            display: inline-block;
+            width: 80%;
+            height: 200px;
+            margin: 1rem auto;
+            text-align: center;
+            font-size: 18px;
+            margin-top: 50px;
+            margin-left: 50px;
+            margin-bottom: 80px;
+            padding-top: 25px;
+            padding-right: 10px;
+            padding-left: 10px;
+        }
+        .container-form form textarea{
+            max-width: 180px;
+            min-width: 180px;
+            min-height: 140px;
+            max-height: 150px;
+        }
+    }
+
     }
